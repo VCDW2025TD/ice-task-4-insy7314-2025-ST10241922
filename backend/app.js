@@ -37,7 +37,7 @@ mongoose
       });
     } else {
       // Fallback to HTTP if SSL files are missing (makes local testing easier)
-      const http = require('http');
+      const http =   require('http');
       http.createServer(app).listen(PORT, () => {
         console.log(Server running at http://localhost:${PORT} (no SSL files found));
       });
